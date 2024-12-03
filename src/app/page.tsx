@@ -1,7 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 import Section from "@/app/components/ui/section";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faReact, faRust, faPython } from "@fortawesome/free-brands-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
     return (
@@ -16,12 +20,36 @@ export default function Home() {
                 </Section>
                 <Section title="Projects" delay={0.4}>
                     <p className="font-semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos sit tenetur aut reiciendis ex deleniti nemo rerum culpa, error, iure ullam officia debitis possimus voluptatum libero, numquam laudantium iste dicta ratione incidunt dolorem porro ipsa illo? Cum qui quia non odit ea, voluptates labore mollitia, nostrum sint iste voluptatem repellendus, explicabo at fugiat maxime. Inventore reprehenderit, ea ipsum error praesentium architecto est odit facilis perspiciatis nam neque minus aut labore corrupti impedit suscipit nemo atque omnis quo aspernatur aliquam delectus.</p>
+                    <div className="flex gap-4">
+                        <ProjectTile title="Share" description="An easy-to-use file sharing platform." url="https://share.harveycoombs.com/" repo="https://github.com/harveycoombs/share" language="React" />
+                        <ProjectTile title="Congruence AI" description="An easy-to-use file sharing platform." url="https://aicongruence.com/" language="React" />
+                        <ProjectTile title="Storage" description="A fast file server." url="https://storage.harveycoombs.com/" repo="https://github.com/harveycoombs/storage" language="Rust" />
+                        <ProjectTile title="Discord Bot" description="A general purpose Discord bot." repo="https://github.com/harveycoombs/discord-bot" language="Python" />
+                    </div>
                 </Section>
 
-                <Section title="Contact" delay={0.6}>
-                    <p className="font-semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos sit tenetur aut reiciendis ex deleniti nemo rerum culpa, error, iure ullam officia debitis possimus voluptatum libero, numquam laudantium iste dicta ratione incidunt dolorem porro ipsa illo? Cum qui quia non odit ea, voluptates labore mollitia, nostrum sint iste voluptatem repellendus, explicabo at fugiat maxime. Inventore reprehenderit, ea ipsum error praesentium architecto est odit facilis perspiciatis nam neque minus aut labore corrupti impedit suscipit nemo atque omnis quo aspernatur aliquam delectus.</p>
+                <Section title="Activity" delay={0.6}>
+                    <p className="font-semibold">[Custom GitHub statistics go here]</p>
                 </Section>
             </div>
         </main>
+    );
+}
+
+function ProjectTile({ title, description, url, repo, language }: any) {
+    return (
+        <div className="w-1/4 p-2.5 rounded-md inline-flex flex-col items-center justify-between bg-slate-100 text-center select-none duration-150 hover:-translate-y-2 hover:shadow-md">
+            <div>
+                <strong className="font-bold">{title}</strong>
+                <div className="text-slate-400/75 font-medium text-sm">{description}</div>
+            </div>
+            <div className="w-full flex justify-between items-center mt-2.5 text-lg text-slate-400 leading-none">
+                {language?.length ? <div className="text-sm font-bold bg-slate-300/70 text-slate-500/70 leading-none py-1 px-2 rounded">{language}</div> : <div></div>}
+                <div>
+                    {repo?.length ? <Link href={repo} target="_blank" className="inline-block align-middle duration-150 hover:text-slate-500/85 active:text-slate-500" title="View on GitHub"><FontAwesomeIcon icon={faGithub} /></Link> : <div></div>}
+                    {url?.length ? <Link href={url} target="_blank" className="inline-block align-middle duration-150 ml-3 hover:text-slate-500/85 active:text-slate-500" title="View"><FontAwesomeIcon icon={faExternalLinkAlt} /></Link> : null}
+                </div>
+            </div>
+        </div>
     );
 }
