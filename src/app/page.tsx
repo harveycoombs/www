@@ -23,7 +23,7 @@ export default function Home() {
                     <p className="font-semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos sit tenetur aut reiciendis ex deleniti nemo rerum culpa, error, iure ullam officia debitis possimus voluptatum libero, numquam laudantium iste dicta ratione incidunt dolorem porro ipsa illo? Cum qui quia non odit ea, voluptates labore mollitia, nostrum sint iste voluptatem repellendus, explicabo at fugiat maxime. Inventore reprehenderit, ea ipsum error praesentium architecto est odit facilis perspiciatis nam neque minus aut labore corrupti impedit suscipit nemo atque omnis quo aspernatur aliquam delectus.</p>
                     <div className="flex gap-4 mt-3 max-[650px]:flex-col">
                         <ProjectTile title="Share" description="An easy-to-use file sharing platform." url="https://share.harveycoombs.com/" repo="https://github.com/harveycoombs/share" language="React" />
-                        <ProjectTile title="Congruence AI" description="An easy-to-use file sharing platform." url="https://aicongruence.com/" language="React" />
+                        <ProjectTile title="Congruence AI" description="An AI Search & Summary Tool." url="https://aicongruence.com/" language="React" />
                         <ProjectTile title="Storage" description="A fast file server." url="https://storage.harveycoombs.com/" repo="https://github.com/harveycoombs/storage" language="Rust" />
                         <ProjectTile title="Discord Bot" description="A general purpose Discord bot." repo="https://github.com/harveycoombs/discord-bot" language="Python" />
                     </div>
