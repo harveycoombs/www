@@ -17,10 +17,17 @@ export default function Home() {
                     <p className="mt-1.5 font-semibold">Welcome to my official website. Here you can find all the information you need about me, my projects, and ways to contact me.</p>
                 </motion.div>
                 <Section title="About Me" delay={0.2}>
-                    <p className="font-semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos sit tenetur aut reiciendis ex deleniti nemo rerum culpa, error, iure ullam officia debitis possimus voluptatum libero, numquam laudantium iste dicta ratione incidunt dolorem porro ipsa illo? Cum qui quia non odit ea, voluptates labore mollitia, nostrum sint iste voluptatem repellendus, explicabo at fugiat maxime. Inventore reprehenderit, ea ipsum error praesentium architecto est odit facilis perspiciatis nam neque minus aut labore corrupti impedit suscipit nemo atque omnis quo aspernatur aliquam delectus.</p>
+                    <ul className="font-semibold list-disc ml-5 leading-relaxed">
+                        <li>Software Engineer</li>
+                        <li>21 Years old</li>
+                        <li>From the United Kingdom</li>
+                        <li>Started programming at the age of 10</li>
+                        <li>Fluent in Python, JavaScript, Rust, Java &amp; C#</li>
+                        <li>Particularly interested in Machine Learning &amp; Decentralised Finance (DeFi)</li>
+                    </ul>
                 </Section>
                 <Section title="Projects" delay={0.4}>
-                    <p className="font-semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos sit tenetur aut reiciendis ex deleniti nemo rerum culpa, error, iure ullam officia debitis possimus voluptatum libero, numquam laudantium iste dicta ratione incidunt dolorem porro ipsa illo? Cum qui quia non odit ea, voluptates labore mollitia, nostrum sint iste voluptatem repellendus, explicabo at fugiat maxime. Inventore reprehenderit, ea ipsum error praesentium architecto est odit facilis perspiciatis nam neque minus aut labore corrupti impedit suscipit nemo atque omnis quo aspernatur aliquam delectus.</p>
+                    <p className="font-semibold">Below are some of my more recent projects.</p>
                     <div className="flex gap-4 mt-3 max-[650px]:flex-col">
                         <ProjectTile title="Share" description="An easy-to-use file sharing platform." url="https://share.harveycoombs.com/" repo="https://github.com/harveycoombs/share" language="React" />
                         <ProjectTile title="Congruence AI" description="An AI Search & Summary Tool." url="https://aicongruence.com/" language="React" />
