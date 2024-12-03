@@ -8,7 +8,7 @@ import Button from "@/app/components/ui/button";
 export default function Header() {
     return (
         <header className="p-3 bg-slate-800 text-white">
-            <div className="flex justify-between items-center w-1000 mx-auto">
+            <div className="flex justify-between items-center w-1000 mx-auto max-[1050px]:w-full">
                 <Link href="/" className="font-medium text-lg leading-none duration-150 hover:opacity-75 active:opacity-55">Harvey Coombs</Link>
                 <nav>
                     <HeaderIcon icon={faGithub} url="https://github.com/harveycoombs" />
