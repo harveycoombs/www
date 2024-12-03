@@ -10,7 +10,7 @@ import Section from "@/app/components/ui/section";
 
 export default function Home() {
     return (
-        <main className="w-1000 h-[calc(100vh-102px)] mx-auto py-6 max-[1050px]:w-full max-[1050px]:px-3">
+        <main className="w-1000 min-h-[calc(100vh-102px)] mx-auto py-6 max-[1050px]:w-full max-[1050px]:px-3">
             <div className="w-650 mx-auto">
                 <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.25, ease: "easeOut" }}>
                     <h1 className="text-3xl text-slate-700 font-bold select-none">Harvey Coombs &ndash; Official Website</h1>
