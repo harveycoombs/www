@@ -3,13 +3,13 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faXTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-import Button from "@/app/components/ui/button";
+import Button from "@/app/components/common/button";
 
 export default function Header() {
     return (
         <header className="p-3 bg-slate-800 text-white">
-            <div className="flex justify-between items-center w-1000 mx-auto max-[1050px]:w-full">
-                <Link href="/" className="font-medium text-lg leading-none duration-150 hover:opacity-75 active:opacity-55">Harvey Coombs</Link>
+            <div className="flex justify-between items-center w-1000 mx-auto max-[1050px]:w-full max-[360px]:justify-center">
+                <Link href="/" className="font-medium text-lg leading-none duration-150 hover:opacity-75 active:opacity-55 max-[360px]:hidden">Harvey Coombs</Link>
                 <nav>
                     <HeaderIcon icon={faGithub} url="https://github.com/harveycoombs" />
                     <HeaderIcon icon={faXTwitter} url="https://x.com/harveycoombs23" />
