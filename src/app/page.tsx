@@ -30,7 +30,7 @@ export default function Home() {
                     <p className="font-semibold max-[550px]:text-sm max-[550px]:font-bold">Below are some of my more recent projects.</p>
                     <div className="grid grid-cols-4 gap-4 mt-3 max-md:grid-cols-2 max-[430px]:grid-cols-1">
                         <ProjectTile title="Share" description="An easy-to-use file sharing platform." url="https://share.harveycoombs.com/" repo="https://github.com/harveycoombs/share" language="React" />
-                        <ProjectTile title="Congruence AI" description="An AI Search & Summary Tool." url="https://aicongruence.com/" language="React" />
+                        <ProjectTile title="Collate" description="An AI Search & Summary Tool." url="https://collate.run/" language="React" />
                         <ProjectTile title="Storage" description="A fast file server." url="https://storage.harveycoombs.com/" repo="https://github.com/harveycoombs/storage" language="Rust" />
                         <ProjectTile title="Discord Bot" description="A general purpose Discord bot." repo="https://github.com/harveycoombs/discord-bot" language="Python" />
                     </div>
