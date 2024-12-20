@@ -22,5 +22,5 @@ export default function Header() {
 }
 
 function HeaderIcon({ icon, url }: any) {
-    return <Link href={url} className="inline-block align-middle text-lg leading-none duration-150 mr-4 text-slate-400 hover:text-slate-300 active:text-slate-200"><FontAwesomeIcon icon={icon} /></Link>;
+    return <Link href={url} target="_blank" rel="noopener" className="inline-block align-middle text-lg leading-none duration-150 mr-4 text-slate-400 hover:text-slate-300 active:text-slate-200"><FontAwesomeIcon icon={icon} /></Link>;
 }
