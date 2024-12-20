@@ -37,7 +37,7 @@ export default function Home() {
                 </Section>
 
                 <Section title="More" delay={0.6}>
-                    <p className="font-semibold max-[550px]:text-sm max-[550px]:font-bold">In addition to the GitHub, X &amp; LinkedIn links found in the header, you can also find me on <Link href="https://huggingface.co/harveycoombs" target="_blank" className="font-bold hover:underline">Huggingface</Link>.</p>
+                    <p className="font-semibold max-[550px]:text-sm max-[550px]:font-bold">In addition to the GitHub, X &amp; LinkedIn links found in the header, you can also find me on <Link href="https://huggingface.co/harveycoombs" target="_blank" rel="noopener" className="font-bold hover:underline">Huggingface</Link>.</p>
                 </Section>
             </div>
         </main>
@@ -54,8 +54,8 @@ function ProjectTile({ title, description, url, repo, language }: any) {
             <div className="w-full flex justify-between items-center mt-2.5 text-lg text-slate-400 leading-none">
                 {language?.length ? <div className="text-sm font-bold bg-slate-300/70 text-slate-500/70 leading-none py-1 px-2 rounded">{language}</div> : <div></div>}
                 <div>
-                    {repo?.length ? <Link href={repo} target="_blank" className="inline-block align-middle duration-150 hover:text-slate-500/85 active:text-slate-500" title="View on GitHub"><FontAwesomeIcon icon={faGithub} /></Link> : <div></div>}
-                    {url?.length ? <Link href={url} target="_blank" className="inline-block align-middle duration-150 ml-3 hover:text-slate-500/85 active:text-slate-500" title="View"><FontAwesomeIcon icon={faExternalLinkAlt} /></Link> : null}
+                    {repo?.length ? <Link href={repo} target="_blank" rel="noopener" className="inline-block align-middle duration-150 hover:text-slate-500/85 active:text-slate-500" title="View on GitHub"><FontAwesomeIcon icon={faGithub} /></Link> : <div></div>}
+                    {url?.length ? <Link href={url} target="_blank" rel="noopener" className="inline-block align-middle duration-150 ml-3 hover:text-slate-500/85 active:text-slate-500" title="View"><FontAwesomeIcon icon={faExternalLinkAlt} /></Link> : null}
                 </div>
             </div>
         </div>
