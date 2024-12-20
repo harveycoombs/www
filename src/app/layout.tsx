@@ -17,6 +17,7 @@ const description = "The official website for Harvey Coombs, a software engineer
 export const metadata: Metadata = {
     title: "Harvey Coombs · Personal Website",
     description: description,
+    icons: { icon: "/images/me.jpeg" },
     openGraph: {
         title: "Harvey Coombs",
         description: description,
