@@ -46,7 +46,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head>
-                <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+                <link rel="apple-touch-icon" sizes="180x180" href="/images/me.jpeg" />
                 <link rel="canonical" href="https://harveycoombs.com" />
             </head>
             <body className={`h-screen ${inter.className} bg-white text-slate-500`}>
