@@ -13,8 +13,8 @@ const inter = Nunito({
 });
 
 export const metadata: Metadata = {
-    title: `Harvey Coombs · Personal Website`,
-    description: ""
+    title: "Harvey Coombs · Personal Website",
+    description: "The official website for Harvey Coombs, a software engineer from the United Kingdom."
 };
 
 export default function RootLayout({
