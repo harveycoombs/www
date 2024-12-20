@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         description: description,
         url: "https://harveycoombs.com",
         images: [{
-            url: "https://harveycoombs.com/images/me.jpg",
+            url: "https://harveycoombs.com/images/me.jpeg",
             width: 1200,
             height: 630,
             alt: "Me next to my car"
