@@ -38,7 +38,7 @@ export default function Home() {
                 </Section>
 
                 <Section title="More" delay={0.6}>
-                    <p className="font-semibold max-[550px]:text-sm max-[550px]:font-bold">In addition to the GitHub, X &amp; LinkedIn links found in the header, you can also find me on <Link href="https://huggingface.co/harveycoombs" target="_blank" rel="noopener" className="font-bold hover:underline">Huggingface</Link>.</p>
+                    <p className="font-semibold max-[550px]:text-sm max-[550px]:font-bold">In addition to the GitHub, X &amp; LinkedIn links found in the header, you can also find me on <Link href="https://huggingface.co/harveycoombs" target="_blank" rel="noopener" className="font-bold hover:underline">Huggingface</Link> and <Link href="https://www.chess.com/member/harveycoombs" target="_blank" rel="noopener" className="font-bold hover:underline">Chess.com</Link>.</p>
                 </Section>
             </div>
         </main>
