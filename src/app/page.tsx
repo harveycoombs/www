@@ -23,7 +23,7 @@ export default function Home() {
                         <li>From the United Kingdom</li>
                         <li>Started programming at the age of 10</li>
                         <li>Fluent in Python, JavaScript, Rust, Java &amp; C#</li>
-                        <li>Particularly interested in Deep Learning &amp; Decentralised Finance (DeFi)</li>
+                        <li>Particularly interested in Deep Learning &amp; Decentralised Finance &lpar;DeFi&rpar;</li>
                         <li>Also enjoys reading and playing chess</li>
                     </ul>
                 </Section>
