@@ -9,6 +9,8 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import Section from "@/app/components/common/section";
 
 export default function Home() {
+    let age = Math.floor((new Date() - new Date("2003-05-23")) / (1000 * 60 * 60 * 24 * 365.25));
+
     return (
         <main className="w-1000 min-h-[calc(100vh-102px)] mx-auto py-6 max-[1050px]:w-full max-[1050px]:px-3 max-[550px]:py-3">
             <div className="w-650 mx-auto">
@@ -19,7 +21,7 @@ export default function Home() {
                 <Section title="About Me" delay={0.2}>
                     <ul className="font-semibold list-disc ml-5 leading-relaxed max-[550px]:text-sm max-[550px]:font-bold">
                         <li>Software Engineer</li>
-                        <li>21 Years old</li>
+                        <li>{age} Years old</li>
                         <li>From the United Kingdom</li>
                         <li>Started programming at the age of 10</li>
                         <li>Fluent in Python, JavaScript, Rust &amp; C#</li>
