@@ -13,7 +13,7 @@ export default function Header() {
                 <nav>
                     <HeaderIcon icon={faGithub} url="https://github.com/harveycoombs" />
                     <HeaderIcon icon={faXTwitter} url="https://x.com/harveycoombs23" />
-                    <HeaderIcon icon={faLinkedin} url="https://uk.linkedin.com/in/harvey-coombs-24573214a/" />
+                    <HeaderIcon icon={faLinkedin} url="https://linkedin.com/in/harvey-coombs-24573214a/" />
                     <Button url="mailto:contact@harveycoombs.com" classes="inline-block align-middle">Email Me</Button>
                 </nav>
             </div>
