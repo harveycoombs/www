@@ -22,18 +22,18 @@ export default function Home() {
                         <li>21 Years old</li>
                         <li>From the United Kingdom</li>
                         <li>Started programming at the age of 10</li>
-                        <li>Fluent in Python, JavaScript, Rust, Java &amp; C#</li>
-                        <li>Particularly interested in Deep Learning &amp; Decentralised Finance &lpar;DeFi&rpar;</li>
+                        <li>Fluent in Python, JavaScript, Rust &amp; C#</li>
+                        <li>Particularly interested in Deep Learning</li>
                         <li>Also enjoys reading and playing chess</li>
                     </ul>
                 </Section>
                 <Section title="Projects" delay={0.4}>
-                    <p className="font-semibold max-[550px]:text-sm max-[550px]:font-bold">Below are some of my more recent projects.</p>
+                    <p className="font-semibold max-[550px]:text-sm max-[550px]:font-bold">Below are some of my recent projects.</p>
                     <div className="grid grid-cols-4 gap-4 mt-3 max-md:grid-cols-2 max-[430px]:grid-cols-1">
                         <ProjectTile title="Share" description="An easy-to-use file sharing platform." url="https://share.surf/" repo="https://github.com/harveycoombs/share" language="React" />
                         <ProjectTile title="Collate" description="An AI search & summary Tool." url="https://collate.run/" language="React" />
                         <ProjectTile title="Storage" description="A fast file server." url="https://storage.harveycoombs.com/" repo="https://github.com/harveycoombs/storage" language="Rust" />
-                        <ProjectTile title="Discord Bot" description="A general purpose Discord bot." repo="https://github.com/harveycoombs/discord-bot" language="Python" />
+                        <ProjectTile title="Talk" description="Effortless language model inference" repo="https://github.com/harveycoombs/talk" language="Python" />
                     </div>
                 </Section>
 
