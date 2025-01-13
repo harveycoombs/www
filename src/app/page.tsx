@@ -9,7 +9,7 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import Section from "@/app/components/common/section";
 
 export default function Home() {
-    let age = Math.floor((new Date() - new Date("2003-05-23")) / (1000 * 60 * 60 * 24 * 365.25));
+    let age = Math.floor((new Date().getTime() - new Date("2003-05-23").getTime()) / (1000 * 60 * 60 * 24 * 365.25));
 
     return (
         <main className="w-1000 min-h-[calc(100vh-102px)] mx-auto py-6 max-[1050px]:w-full max-[1050px]:px-3 max-[550px]:py-3">
