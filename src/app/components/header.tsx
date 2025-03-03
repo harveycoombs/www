@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faReddit, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-import Button from "@/app/components/common/button";
+import Button from "@/app/components/common/Button";
 
 export default function Header() {
     return (

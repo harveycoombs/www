@@ -25,8 +25,7 @@ export default function Home() {
                         <li>From the United Kingdom</li>
                         <li>Started programming at the age of 10</li>
                         <li>Fluent in Python, JavaScript, Rust &amp; C#</li>
-                        <li>Particularly interested in deep learning</li>
-                        <li>Also interested in chess and automotive engineering</li>
+                        <li>Particularly interested in deep learning and decentralised finance (DeFi)</li>
                     </ul>
                 </Section>
                 <Section title="Projects" delay={0.4}>
@@ -39,7 +38,7 @@ export default function Home() {
                 </Section>
 
                 <Section title="More" delay={0.6}>
-                    <p className="font-semibold max-[550px]:text-sm max-[550px]:font-bold">In addition to the GitHub, X &amp; LinkedIn links found in the header, you can also find me on <Link href="https://huggingface.co/harveycoombs" target="_blank" rel="noopener" className="font-bold hover:underline">Huggingface</Link> and <Link href="https://www.chess.com/member/harveycoombs" target="_blank" rel="noopener" className="font-bold hover:underline">Chess.com</Link>.</p>
+                    <p className="font-semibold max-[550px]:text-sm max-[550px]:font-bold">In addition to the GitHub, Reddit &amp; LinkedIn links found in the header, you can also find me on <Link href="https://huggingface.co/harveycoombs" target="_blank" rel="noopener" className="font-bold hover:underline">Huggingface</Link> and <Link href="https://www.chess.com/member/harveycoombs" target="_blank" rel="noopener" className="font-bold hover:underline">Chess.com</Link>.</p>
                 </Section>
             </div>
         </main>
