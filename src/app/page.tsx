@@ -6,10 +6,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
-import Section from "@/app/components/common/section";
+import Section from "@/app/components/common/Section";
 
 export default function Home() {
-    let age = Math.floor((new Date().getTime() - new Date("2003-05-23").getTime()) / (1000 * 60 * 60 * 24 * 365.25));
+    const age = Math.floor((new Date().getTime() - new Date("2003-05-23").getTime()) / (1000 * 60 * 60 * 24 * 365.25));
 
     return (
         <main className="w-1000 min-h-[calc(100vh-102px)] mx-auto py-6 max-[1050px]:w-full max-[1050px]:px-3 max-[550px]:py-3">
@@ -54,7 +54,7 @@ function ProjectTile({ title, description, url, repo, language }: any) {
                 <div className="text-slate-400/75 font-medium text-sm">{description}</div>
             </div>
             <div className="w-full flex justify-between items-center mt-2.5 text-lg text-slate-400 leading-none">
-                {language?.length ? <div className="text-sm font-bold bg-slate-300/70 text-slate-500/70 leading-none py-1 px-2 rounded-sm">{language}</div> : <div></div>}
+                {language?.length ? <div className="text-sm font-bold bg-slate-300/70 text-slate-500/70 leading-none py-1 px-2 rounded">{language}</div> : <div></div>}
                 <div>
                     {repo?.length ? <Link href={repo} target="_blank" rel="noopener" className="inline-block align-middle duration-150 hover:text-slate-500/85 active:text-slate-500" title="View on GitHub"><FontAwesomeIcon icon={faGithub} /></Link> : <div></div>}
                     {url?.length ? <Link href={url} target="_blank" rel="noopener" className="inline-block align-middle duration-150 ml-3 hover:text-slate-500/85 active:text-slate-500" title="View"><FontAwesomeIcon icon={faExternalLinkAlt} /></Link> : null}
