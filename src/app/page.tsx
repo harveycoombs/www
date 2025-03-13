@@ -32,13 +32,15 @@ export default function Home() {
                     <p className="font-semibold max-[550px]:text-sm max-[550px]:font-bold">Below are some of my recent projects.</p>
                     <div className="grid grid-cols-3 gap-4 mt-3 max-sm:grid-cols-2 max-[430px]:grid-cols-1">
                         <ProjectTile title="Share" description="An easy-to-use file sharing platform." url="https://share.surf/" repo="https://github.com/harveycoombs/share" language="React" />
-                        <ProjectTile title="Collate" description="An AI search & summary tool." repo="https://github.com/harveycoombs/collate" url="https://collate.harveycoombs.com/" language="React"  />
-                        <ProjectTile title="Storage" description="A fast file server." url="https://storage.harveycoombs.com/" repo="https://github.com/harveycoombs/storage" language="Rust" />
+                        <ProjectTile title="Collate" description="An AI search & summary tool." repo="https://github.com/harveycoombs/collate" language="React"  />
+                        <ProjectTile title="Storage" description="A fast file server." repo="https://github.com/harveycoombs/storage" language="Rust" />
+                        <ProjectTile title="Transformer Experiment" description="A transformer model for text generation." repo="https://github.com/harveycoombs/transformer-experiment" language="Python" />
+                        <ProjectTile title="Diffusion Experiment" description="A diffusion model for image generation." repo="https://github.com/harveycoombs/diffusion-experiment" language="Python" />
                     </div>
                 </Section>
 
                 <Section title="More" delay={0.6}>
-                    <p className="font-semibold max-[550px]:text-sm max-[550px]:font-bold">In addition to the GitHub, Reddit &amp; LinkedIn links found in the header, you can also find me on <Link href="https://huggingface.co/harveycoombs" target="_blank" rel="noopener" className="font-bold hover:underline">Huggingface</Link> and <Link href="https://www.chess.com/member/harveycoombs" target="_blank" rel="noopener" className="font-bold hover:underline">Chess.com</Link>.</p>
+                    <p className="font-semibold max-[550px]:text-sm max-[550px]:font-bold">In addition to the GitHub, Reddit &amp; LinkedIn links found in the header, you can also find me on <Link href="https://huggingface.co/harveycoombs" target="_blank" rel="noopener" className="font-bold hover:underline">Huggingface</Link>.</p>
                 </Section>
             </div>
         </main>

@@ -12,7 +12,7 @@ export default function Header() {
                 <Link href="/" className="font-medium text-lg leading-none duration-150 hover:opacity-75 active:opacity-55 max-[360px]:hidden">Harvey Coombs</Link>
                 <nav>
                     <HeaderIcon icon={faGithub} url="https://github.com/harveycoombs" />
-                    <HeaderIcon icon={faReddit} url="https://www.reddit.com/user/Harvey_Coombs" />
+                    <HeaderIcon icon={faReddit} url="https://www.reddit.com/user/Harvey-Coombs" />
                     <HeaderIcon icon={faLinkedin} url="https://linkedin.com/in/harvey-coombs-24573214a/" />
                     <Button url="mailto:contact@harveycoombs.com" classes="inline-block align-middle">Email Me</Button>
                 </nav>
