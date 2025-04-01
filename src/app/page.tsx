@@ -55,7 +55,7 @@ function ProjectTile({ title, description, url, repo, language }: any) {
                 <div className="text-slate-400/75 font-medium text-sm">{description}</div>
             </div>
             <div className="w-full flex justify-between items-center mt-2.5 text-lg text-slate-400 leading-none">
-                {language?.length ? <div className="text-sm font-bold bg-slate-300/70 text-slate-500/70 leading-none py-1 px-2 rounded">{language}</div> : <div></div>}
+                {language?.length ? <div className="text-sm font-bold bg-slate-300/70 text-slate-500/70 leading-none py-1 px-2 rounded-sm">{language}</div> : <div></div>}
                 <div>
                     {repo?.length ? <Link href={repo} target="_blank" rel="noopener" className="inline-block align-middle duration-150 hover:text-slate-500/85 active:text-slate-500" title="View on GitHub"><FontAwesomeIcon icon={faGithub} /></Link> : <div></div>}
                     {url?.length ? <Link href={url} target="_blank" rel="noopener" className="inline-block align-middle duration-150 ml-3 hover:text-slate-500/85 active:text-slate-500" title="View"><FontAwesomeIcon icon={faExternalLinkAlt} /></Link> : null}
