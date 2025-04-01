@@ -13,7 +13,7 @@ export default function Home() {
 
     return (
         <main className="w-1000 min-h-[calc(100vh-102px)] mx-auto py-6 max-[1050px]:w-full max-[1050px]:px-3 max-[550px]:py-3">
-            <div className="w-650 mx-auto">
+            <div className="w-1000 mx-auto">
                 <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.25, ease: "easeOut" }}>
                     <h1 className="text-3xl text-slate-700 font-bold select-none max-[550px]:text-center max-[550px]:text-2xl">Harvey Coombs &ndash; Official Website</h1>
                     <p className="mt-1.5 font-semibold max-[550px]:text-center max-[550px]:text-sm max-[550px]:font-bold">Welcome to my official website. Here you can find all the information you need about me, my projects, and ways to contact me.</p>
@@ -51,7 +51,7 @@ function ProjectTile({ title, description, url, repo, language }: any) {
     return (
         <div className="p-2.5 rounded-md inline-flex flex-col items-center justify-between bg-slate-100 text-center select-none duration-150 hover:-translate-y-2 hover:shadow-md max-[650px]:w-full">
             <div>
-                <strong className="font-bold">{title}</strong>
+                <strong className="font-bold text-slate-500">{title}</strong>
                 <div className="text-slate-400/75 font-medium text-sm">{description}</div>
             </div>
             <div className="w-full flex justify-between items-center mt-2.5 text-lg text-slate-400 leading-none">
