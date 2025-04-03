@@ -25,7 +25,7 @@ export default function Home() {
                         <li>From the United Kingdom</li>
                         <li>Started programming at the age of 10</li>
                         <li>Fluent in Python, JavaScript, Rust &amp; C#</li>
-                        <li>Particularly interested in deep learning and decentralised finance (DeFi)</li>
+                        <li>Particularly interested in machine learning</li>
                     </ul>
                 </Section>
                 <Section title="Projects" delay={0.4}>
