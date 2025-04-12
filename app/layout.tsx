@@ -20,7 +20,7 @@ const description = "The official website for Harvey Coombs.";
 export const metadata: Metadata = {
     title: "Harvey Coombs · Personal Website",
     description: description,
-    icons: { icon: "/images/me.jpeg" },
+    icons: { icon: "/images/icon.png" },
     openGraph: {
         title: "Harvey Coombs",
         description: description,
