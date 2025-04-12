@@ -16,7 +16,7 @@ export default function Home() {
                 <Image src="/images/me.jpg" alt="Me" width={350} height={350} className="rounded-lg block object-cover shadow-lg select-none" draggable={false} />
 
                 <div>
-                    <h1 className="text-4xl leading-none uppercase">Harvey Coombs <span className="text-red-500">&middot;</span> Personal Website</h1>
+                    <h1 className="text-4xl leading-none uppercase">Harvey Coombs <span className="text-red-500">&middot;</span> Official Website</h1>
                     <ul className="text-lg my-10 list-[square] marker:text-red-500 list-inside">
                         <li>Software Engineer</li>
                         <li>{age} Years old</li>
