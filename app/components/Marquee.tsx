@@ -29,9 +29,9 @@ export default function Marquee({ children, speed = 1, direction = "right", clas
         };
         
         updateWidths();
-        window.addEventListener('resize', updateWidths);
+        window.addEventListener("resize", updateWidths);
         
-        return () => window.removeEventListener('resize', updateWidths);
+        return () => window.removeEventListener("resize", updateWidths);
     }, [speed]);
     
     const repeats = Math.ceil(containerWidth / contentWidth) + 1;
@@ -44,10 +44,10 @@ export default function Marquee({ children, speed = 1, direction = "right", clas
             <div 
                 className="flex whitespace-nowrap"
                 style={{
-                    animationName: 'marquee',
+                    animationName: "marquee",
                     animationDuration: `${animationDuration}s`,
-                    animationTimingFunction: 'linear',
-                    animationIterationCount: 'infinite',
+                    animationTimingFunction: "linear",
+                    animationIterationCount: "infinite",
                     animationDirection: direction === "left" ? "reverse" : "normal"
                 }}
             >
