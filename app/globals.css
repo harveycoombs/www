@@ -11,4 +11,9 @@
         -ms-text-stroke: 3px rgba(255, 255, 255, 0.3);
         text-stroke: 3px rgba(255, 255, 255, 0.3);
     }
+
+    ::selection {
+        background-color: #FB2C36;
+        color: #FFFFFF;
+    }
 }
