@@ -57,7 +57,7 @@ export default function RootLayout({
                 {children}
                 <Marquee speed={1} direction="left" classes="bottom-40 -rotate-5">Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
                 <footer className="fixed bottom-0 left-0 right-0 p-2.5 text-center text-xs text-neutral-700">
-                    2020 &ndash; 2025 &middot; Harvey Coombs
+                    2020 &ndash; {new Date().getFullYear()} &middot; Harvey Coombs
                 </footer>
             </body>
         </html>
