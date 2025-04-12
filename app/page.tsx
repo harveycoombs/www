@@ -4,8 +4,7 @@ import { motion } from "motion/react";
 
 import SocialMediaIcon from "@/app/components/SocialMediaIcon";
 import Button from "@/app/components/Button";
-import { faGithub, faReddit } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faRedditAlien, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
     const age = Math.floor((new Date().getTime() - new Date("2003-05-23").getTime()) / (1000 * 60 * 60 * 24 * 365.25));
@@ -28,7 +27,7 @@ export default function Home() {
 
                     <div className="flex gap-4 select-none">
                         <SocialMediaIcon url="https://github.com/harveycoombs" icon={faGithub} />
-                        <SocialMediaIcon url="https://www.reddit.com/user/Harvey-Coombs" icon={faReddit} />
+                        <SocialMediaIcon url="https://www.reddit.com/user/Harvey-Coombs" icon={faRedditAlien} />
                         <SocialMediaIcon url="https://www.linkedin.com/in/harveycoombs" icon={faLinkedin} />
                         <Button url="mailto:contact@harveycoombs.com">Email Me</Button>
                     </div>

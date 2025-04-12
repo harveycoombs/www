@@ -8,5 +8,5 @@ interface Properties {
 }
 
 export default function SocialMediaIcon({ icon, url, ...rest }: Properties) {
-    return <Link href={url} className="py-3 rounded-lg text-2xl bg-neutral-700 text-neutral-400 leading-none aspect-square duration-150 text-center select-none h-[47px] hover:bg-neutral-700/70 active:bg-neutral-800" {...rest}><FontAwesomeIcon icon={icon} /></Link>;
+    return <Link href={url} className="py-3 rounded-lg text-2xl bg-neutral-700 text-neutral-400 leading-none aspect-square duration-150 text-center select-none h-[47px] hover:bg-neutral-700/70 active:bg-neutral-800 active:translate-y-0.75" {...rest}><FontAwesomeIcon icon={icon} /></Link>;
 }
