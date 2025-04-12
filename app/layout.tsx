@@ -6,7 +6,7 @@ import "./globals.css";
 
 import Marquee from "@/app/components/Marquee";
 
-export const specialGothicExpandedOne = localFont({
+const specialGothicExpandedOne = localFont({
     src: [{
         path: "../public/fonts/SpecialGothicExpandedOne-Regular.woff",
         weight: "400",
