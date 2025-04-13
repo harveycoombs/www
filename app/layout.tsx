@@ -53,9 +53,9 @@ export default function RootLayout({
             </head>
 
             <body className={`${specialGothicExpandedOne.className} h-screen bg-gradient-to-b from-[#0A0A0A] to-[#000000] text-white`}>
-                <Marquee speed={1} classes="top-40 rotate-5">Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
+                <Marquee speed={1} classes="top-40 rotate-5 max-lg:top-25">Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
                 {children}
-                <Marquee speed={1} direction="left" classes="bottom-40 -rotate-5">Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
+                <Marquee speed={1} direction="left" classes="bottom-40 -rotate-5 max-lg:bottom-25   ">Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
                 <footer className="fixed bottom-0 left-0 right-0 p-2.5 text-center text-xs text-neutral-700">
                     2020 &ndash; {new Date().getFullYear()} &middot; Harvey Coombs
                 </footer>
