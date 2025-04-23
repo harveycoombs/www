@@ -18,7 +18,7 @@ const specialGothicExpandedOne = localFont({
 const description = "The official website for Harvey Coombs.";
 
 export const metadata: Metadata = {
-    title: "Harvey Coombs · Personal Website",
+    title: "Harvey Coombs · Official Website",
     description: description,
     icons: { icon: "/images/icon.png" },
     openGraph: {
