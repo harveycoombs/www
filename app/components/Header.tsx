@@ -21,7 +21,7 @@ export default function Header() {
 }
 
 function HeaderLink({ url, children }: any) {
-    return <Link href={url} target="_blank" rel="noopener" className="inline-block align-middle mr-12 text-xs uppercase select-none cursor-pointer duration-300 hover:opacity-70 active:opacity-50 max-md:mr-0 px-2">{children}</Link>;
+    return <Link href={url} target="_blank" rel="noopener" className="inline-block align-middle mr-8 text-xs uppercase select-none cursor-pointer duration-300 hover:opacity-70 active:opacity-50 max-md:mr-0 px-2">{children}</Link>;
 }
 
 function HeaderIcon({ url, icon }: any) {
