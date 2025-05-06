@@ -52,12 +52,7 @@ export default function Marquee({ children, speed = 1, direction = "right" }: Pr
                     animationDuration: `${animationDuration}s`,
                     animationTimingFunction: "linear",
                     animationIterationCount: "infinite",
-                    animationDirection: direction === "left" ? "reverse" : "normal",
-                    WebkitAnimationName: "marquee",
-                    WebkitAnimationDuration: `${animationDuration}s`,
-                    WebkitAnimationTimingFunction: "linear",
-                    WebkitAnimationIterationCount: "infinite",
-                    WebkitAnimationDirection: direction === "left" ? "reverse" : "normal"
+                    animationDirection: direction === "left" ? "reverse" : "normal"
                 }}
             >
                 {contentWidth > 0 && 
@@ -77,19 +72,6 @@ export default function Marquee({ children, speed = 1, direction = "right" }: Pr
                     100% {
                         transform: translateX(-${contentWidth}px);
                     }
-                }
-                
-                @-webkit-keyframes marquee {
-                    0% {
-                        -webkit-transform: translateX(0);
-                    }
-                    100% {
-                        -webkit-transform: translateX(-${contentWidth}px);
-                    }
-                }
-                
-                .outline-text {
-                    -webkit-text-stroke: 6px white;
                 }
             `}</style>
         </div>
