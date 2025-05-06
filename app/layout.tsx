@@ -4,7 +4,9 @@ import localFont from "next/font/local";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "./globals.css";
 
+import Header from "@/app/components/Header";
 import Marquee from "@/app/components/Marquee";
+import Footer from "@/app/components/Footer";
 
 const specialGothicExpandedOne = localFont({
     src: [{
@@ -52,16 +54,14 @@ export default function RootLayout({
                 <link rel="canonical" href="https://harveycoombs.com" />
             </head>
 
-            <body className={`${specialGothicExpandedOne.className} h-screen bg-[linear-gradient(0deg,rgb(0_0_0/98%),rgb(10_10_10/95%)),url(/images/background.jpg)] bg-cover bg-center backdrop-blur-md text-white`}>
-                <Marquee speed={1} classes="top-40 rotate-4 max-2xl:top-32 max-lg:top-25 max-sm:text-5xl max-sm:rotate-0 max-sm:top-18">Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
+            <body className={`${specialGothicExpandedOne.className} h-screen bg-[linear-gradient(0deg,rgb(0_0_0/98%),rgb(10_10_10/95%)),url(/images/background.jpg)] bg-cover bg-center overflow-hidden text-white`}>
+                <Header />
 
                 {children}
 
-                <Marquee speed={1} direction="left" classes="bottom-40 -rotate-4 max-2xl:bottom-32 max-lg:bottom-25 max-sm:text-5xl max-sm:rotate-0 max-sm:bottom-18">Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
+                <Marquee speed={1.5} direction="left" classes="bottom-0">Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
 
-                <footer className="fixed bottom-0 left-0 right-0 p-2.5 text-center text-xs text-neutral-700">
-                    2020 &ndash; {new Date().getFullYear()} &middot; Harvey Coombs
-                </footer>
+                <Footer />
             </body>
         </html>
     );

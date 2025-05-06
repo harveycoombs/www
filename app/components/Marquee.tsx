@@ -39,7 +39,11 @@ export default function Marquee({ children, speed = 1, direction = "right", clas
     return (
         <div 
             ref={containerRef}
-            className={`outline-text w-screen fixed overflow-hidden uppercase text-7xl text-transparent select-none text-center pointer-events-none${classes?.length ? " " + classes : ""}`}
+            className={`outline-text w-screen fixed overflow-hidden uppercase text-[16rem] leading-none text-transparent select-none text-center pointer-events-none${classes?.length ? " " + classes : ""}`}
+            style={{ 
+                WebkitTextStrokeWidth: "6px",
+                strokeWidth: "6px"
+            }}
         >
             <div 
                 className="flex whitespace-nowrap"
