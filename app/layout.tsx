@@ -54,7 +54,7 @@ export default function RootLayout({
                 <link rel="canonical" href="https://harveycoombs.com" />
             </head>
 
-            <body className={`${specialGothicExpandedOne.className} h-screen bg-[linear-gradient(0deg,rgb(0_0_0/98%),rgb(10_10_10/95%)),url(/images/background.jpg)] bg-cover bg-center overflow-hidden text-white`}>
+            <body className={`${specialGothicExpandedOne.className} h-screen bg-[linear-gradient(0deg,rgb(0_0_0/98%),rgb(10_10_10/95%)),url(/images/background.jpg?v=1)] bg-cover bg-center overflow-hidden text-white`}>
                 <Header />
 
                 {children}
