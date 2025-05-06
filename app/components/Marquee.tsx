@@ -39,7 +39,7 @@ export default function Marquee({ children, speed = 1, direction = "right", clas
     return (
         <div 
             ref={containerRef}
-            className="outline-text w-screen fixed bottom-0 overflow-hidden uppercase text-[16rem] leading-none text-transparent select-none text-center pointer-events-none max-2xl:text-[14rem] max-xl:text-[12rem] max-sm:text-[11rem]"
+            className="outline-text w-screen fixed bottom-0 overflow-hidden uppercase text-[16rem] leading-none text-transparent select-none text-center pointer-events-none max-2xl:text-[14rem] max-xl:text-[12rem] max-sm:text-9xl max-sm:bottom-5"
             style={{ 
                 WebkitTextStrokeWidth: "6px",
                 strokeWidth: "6px"
