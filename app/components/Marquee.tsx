@@ -42,7 +42,6 @@ export default function Marquee({ children, speed = 1, direction = "right" }: Pr
             className="outline-text w-screen fixed bottom-0 overflow-hidden uppercase text-[16rem] leading-none text-transparent select-none text-center pointer-events-none max-2xl:text-[14rem] max-xl:text-[12rem] max-sm:text-9xl max-sm:bottom-5"
             style={{ 
                 WebkitTextStrokeWidth: "6px",
-                WebkitTextStrokeColor: "white",
                 strokeWidth: "6px"
             }}
         >
