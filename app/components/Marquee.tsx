@@ -8,7 +8,7 @@ interface Properties {
     classes?: string;
 }
 
-export default function Marquee({ children, speed = 1, direction = "right", classes }: Properties) {
+export default function Marquee({ children, speed = 1, direction = "right" }: Properties) {
     const containerRef = useRef<HTMLDivElement>(null);
     const [contentWidth, setContentWidth] = useState(0);
     const [containerWidth, setContainerWidth] = useState(0);
@@ -42,6 +42,7 @@ export default function Marquee({ children, speed = 1, direction = "right", clas
             className="outline-text w-screen fixed bottom-0 overflow-hidden uppercase text-[16rem] leading-none text-transparent select-none text-center pointer-events-none max-2xl:text-[14rem] max-xl:text-[12rem] max-sm:text-9xl max-sm:bottom-5"
             style={{ 
                 WebkitTextStrokeWidth: "6px",
+                WebkitTextStrokeColor: "white",
                 strokeWidth: "6px"
             }}
         >
@@ -52,7 +53,12 @@ export default function Marquee({ children, speed = 1, direction = "right", clas
                     animationDuration: `${animationDuration}s`,
                     animationTimingFunction: "linear",
                     animationIterationCount: "infinite",
-                    animationDirection: direction === "left" ? "reverse" : "normal"
+                    animationDirection: direction === "left" ? "reverse" : "normal",
+                    WebkitAnimationName: "marquee",
+                    WebkitAnimationDuration: `${animationDuration}s`,
+                    WebkitAnimationTimingFunction: "linear",
+                    WebkitAnimationIterationCount: "infinite",
+                    WebkitAnimationDirection: direction === "left" ? "reverse" : "normal"
                 }}
             >
                 {contentWidth > 0 && 
@@ -72,6 +78,19 @@ export default function Marquee({ children, speed = 1, direction = "right", clas
                     100% {
                         transform: translateX(-${contentWidth}px);
                     }
+                }
+                
+                @-webkit-keyframes marquee {
+                    0% {
+                        -webkit-transform: translateX(0);
+                    }
+                    100% {
+                        -webkit-transform: translateX(-${contentWidth}px);
+                    }
+                }
+                
+                .outline-text {
+                    -webkit-text-stroke: 6px white;
                 }
             `}</style>
         </div>
