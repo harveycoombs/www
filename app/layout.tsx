@@ -54,12 +54,12 @@ export default function RootLayout({
                 <link rel="canonical" href="https://harveycoombs.com" />
             </head>
 
-            <body className={`${specialGothicExpandedOne.className} h-screen bg-[linear-gradient(0deg,rgb(0_0_0/94%),rgb(10_10_10/90%)),url(/images/background.jpg?v=1)] bg-cover bg-center overflow-hidden text-white`}>
+            <body className={`${specialGothicExpandedOne.className} h-screen bg-[linear-gradient(0deg,rgb(0_0_0/85%),rgb(10_10_10/70%)),url(/images/background.jpg?v=1)] bg-cover bg-center overflow-hidden text-white`}>
                 <Header />
 
                 {children}
 
-                <Marquee speed={1.5} direction="left">Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
+                <Marquee speed={1.5} direction="left">Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;Harvey Coombs&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
 
                 <Footer />
             </body>
