@@ -5,10 +5,9 @@ export default function Header() {
     return (
         <header className="p-6 z-10 fixed top-0 left-0 right-0 flex justify-between items-center max-md:p-4 max-md:flex-col max-md:gap-3">
             <nav className="pl-0.5 max-md:pl-0 max-md:text-center">
-                <HeaderLink url="https://share.surf">Share.surf</HeaderLink>
-                <HeaderLink url="https://vesper.gg">Vesper.gg</HeaderLink>
-                <HeaderLink url="https://oxyn.ai">Oxyn.ai</HeaderLink>
-                <HeaderLink url="mailto:contact@harveycoombs.com">Contact</HeaderLink>
+                <HeaderLink url="https://share.surf">share.surf</HeaderLink>
+                <HeaderLink url="https://vesper.gg">vesper.gg</HeaderLink>
+                <HeaderLink url="https://darktensor.ai">darktensor.ai</HeaderLink>
             </nav>
 
             <div>
