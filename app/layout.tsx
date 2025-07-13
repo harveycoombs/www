@@ -32,7 +32,7 @@ export default function RootLayout({
                 <link rel="canonical" href="https://harveycoombs.com" />
             </head>
 
-            <body className={`${literata.className} min-h-screen bg-[linear-gradient(to_bottom,rgba(31,41,55,0.85),rgba(55,65,81,0.85)),url('/images/me.jpeg')] bg-cover bg-center bg-no-repeat text-gray-300 select-none`}>
+            <body className={`${literata.className} min-h-screen bg-[linear-gradient(to_bottom,rgba(31,41,55,0.85),rgba(55,65,81,0.85)),url('/images/background.jpg')] bg-cover bg-center bg-no-repeat text-gray-300 select-none`}>
                 <Header />
                 {children}
                 <Footer />  
