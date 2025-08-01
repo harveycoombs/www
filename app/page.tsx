@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import ProjectLink from "./components/ProjectLink";
 
 export default function Home() {
-    const boldIndexes = [4, 5, 6, 7, 8, 9, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117];
+    const boldIndexes = [4, 5, 6, 7, 8, 9, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 126, 127, 128, 129, 130, 131, 132, 134, 135];
     
     return (
         <main className="px-5 h-[calc(100vh-133px)] flex flex-col justify-center max-md:h-[calc(100vh-161px)]">
@@ -15,7 +15,7 @@ export default function Home() {
                     animate={{ y: 0 }} 
                     transition={{ duration: 0.8, delay: 5, ease: "easeOut" }}
                 >
-                    {Array.from("I'm Harvey, an experienced software engineer\nfrom the United Kingdom, focused on Deep\nLearning research and Agentic AI.").map((char, index) => (
+                    {Array.from("I'm Harvey, an experienced software engineer\nfrom the United Kingdom, focused on Deep\nLearning research, Embedded Systems and Agentic AI.").map((char, index) => (
                         <motion.span
                             key={index}
                             initial={{ opacity: 0 }}
