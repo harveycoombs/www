@@ -46,7 +46,7 @@ export default function Home() {
                     <div className="mt-6 flex gap-7 max-md:justify-center max-sm:text-base max-sm:gap-3 max-sm:font-medium">
                         <ProjectLink title="Vesper" url="https://vesper.gg" />
                         <ProjectLink title="Share.surf" url="https://share.surf" />
-                        <ProjectLink title="LlamAccel" url="https://llamaccel.com" />
+                        <ProjectLink title="LlamAccel" url="https://github.com/harveycoombs/llamaccel" />
                         <ProjectLink title="Dark Tensor" url="https://darktensor.ai" />
                     </div>
                 </motion.div>
