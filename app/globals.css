@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+@layer utilities {
     * {
         box-sizing: border-box;
     }
