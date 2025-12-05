@@ -5,6 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
     site: "https://harveycoombs.com",
+    output: "static",
     server: {
         port: 3000
     },
