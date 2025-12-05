@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Title from "../components/Title.jsx";
+import Projects from "../components/Projects.jsx";
+---
+
+<BaseLayout>
+    <main class="px-5 h-[calc(100vh-133px)] flex flex-col justify-center max-md:h-[calc(100vh-161px)]">
+        <section>
+            <Title client:load />
+            <Projects client:load />
+        </section>
+    </main>
+</BaseLayout>
