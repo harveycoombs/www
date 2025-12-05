@@ -18,5 +18,6 @@ export default defineConfig({
                 "@fortawesome/free-brands-svg-icons"
             ]
         }
-    }
+    },
+    outDir: "/var/www/html"
 });
