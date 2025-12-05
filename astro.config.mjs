@@ -8,11 +8,6 @@ import netlify from "@astrojs/netlify";
 export default defineConfig({
   site: "https://harveycoombs.com",
   output: "static",
-
-  server: {
-      port: 3000
-  },
-
   integrations: [react()],
 
   vite: {
@@ -25,7 +20,5 @@ export default defineConfig({
           ]
       }
   },
-
-  outDir: "/var/www/html",
   adapter: netlify()
 });
