@@ -14,16 +14,16 @@
         "@fortawesome/free-brands-svg-icons": "^7.1.0",
         "@fortawesome/free-solid-svg-icons": "^7.1.0",
         "@fortawesome/react-fontawesome": "^3.1.1",
-        "@tailwindcss/vite": "^4.1.17",
-        "astro": "^5.16.4",
-        "motion": "^12.23.25",
-        "react": "^19.2.1",
-        "react-dom": "^19.2.1"
+        "@tailwindcss/vite": "^4.1.18",
+        "astro": "^5.16.5",
+        "motion": "^12.23.26",
+        "react": "^19.2.3",
+        "react-dom": "^19.2.3"
     },
     "devDependencies": {
         "@astrojs/react": "^4.4.2",
         "autoprefixer": "^10.4.22",
         "postcss": "^8.5.6",
-        "tailwindcss": "^4.1.17"
+        "tailwindcss": "^4.1.18"
     }
 }
