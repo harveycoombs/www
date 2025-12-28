@@ -7,7 +7,7 @@ export default function Title({ width = 1172, height = 95, ...rest }) {
     });
 
     return (
-        <svg ref={ref} width={width} height={height} viewBox="0 0 1172 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg ref={ref} width={width} height={height} viewBox="0 0 1172 95" fill="none" xmlns="http://www.w3.org/2000/svg" {...rest}>
             <mask id="path-1-inside-1_5_11" fill="white">
                 <path d="M101.4 1.56L85.15 93.6H56.29L62.66 57.72H35.23L28.86 93.6H0L16.25 1.56H45.11L39.26 34.71H66.69L72.54 1.56H101.4Z"/>
                 <path d="M159.625 79.69H128.945L121.925 93.6H91.6348L141.555 1.56H174.835L192.125 93.6H161.705L159.625 79.69ZM156.505 57.98L152.735 32.37L139.865 57.98H156.505Z"/>

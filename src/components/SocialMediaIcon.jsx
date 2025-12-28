@@ -6,7 +6,7 @@ export default function SocialMediaIcon({ icon, url, ...rest }) {
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xl inline-block align-middle duration-200 hover:text-white"
+            className="block text-2xl inline-block align-middle duration-200 hover:text-white/75 active:text-white/50"
             {...rest}
         >
             <FontAwesomeIcon icon={icon} />
