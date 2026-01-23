@@ -3,8 +3,6 @@ import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import tailwindcss from "@tailwindcss/vite";
 
-import netlify from "@astrojs/netlify";
-
 export default defineConfig({
   site: "https://harveycoombs.com",
   output: "static",
@@ -19,6 +17,5 @@ export default defineConfig({
               "@fortawesome/free-brands-svg-icons"
           ]
       }
-  },
-  adapter: netlify()
+  }
 });
