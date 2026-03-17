@@ -10,7 +10,8 @@ export default function Projects() {
         >
             <ProjectLink title="Vesper AI Bot" url="https://vesperbot.ai" />
             <ProjectLink title="Share.surf" url="https://share.surf" />
-            <ProjectLink title="More Coming Soon" url="#" />
+            <ProjectLink title="Coombs Technologies" url="https://coombstech.com" />
+            <ProjectLink title="Work With Me" url="https://hcdigitalservices.com" />
         </motion.div>
     );
 }
