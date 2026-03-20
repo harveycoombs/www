@@ -9,21 +9,21 @@
         "astro": "astro"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-svg-core": "^7.1.0",
-        "@fortawesome/free-brands-svg-icons": "^7.1.0",
-        "@fortawesome/free-solid-svg-icons": "^7.1.0",
-        "@fortawesome/react-fontawesome": "^3.1.1",
-        "@tailwindcss/vite": "^4.1.18",
-        "astro": "^5.16.15",
-        "motion": "^12.29.0",
-        "react": "^19.2.3",
-        "react-dom": "^19.2.3",
-        "react-intersection-observer": "^10.0.2"
+        "@fortawesome/fontawesome-svg-core": "^7.2.0",
+        "@fortawesome/free-brands-svg-icons": "^7.2.0",
+        "@fortawesome/free-solid-svg-icons": "^7.2.0",
+        "@fortawesome/react-fontawesome": "^3.3.0",
+        "@tailwindcss/vite": "^4.2.2",
+        "astro": "^5.18.1",
+        "motion": "^12.38.0",
+        "react": "^19.2.4",
+        "react-dom": "^19.2.4",
+        "react-intersection-observer": "^10.0.3"
     },
     "devDependencies": {
         "@astrojs/react": "^4.4.2",
-        "autoprefixer": "^10.4.23",
-        "postcss": "^8.5.6",
-        "tailwindcss": "^4.1.18"
+        "autoprefixer": "^10.4.27",
+        "postcss": "^8.5.8",
+        "tailwindcss": "^4.2.2"
     }
 }
