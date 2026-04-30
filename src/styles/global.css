@@ -1,7 +1,0 @@
-@import "tailwindcss";
-
-@layer utilities {
-    * {
-        box-sizing: border-box;
-    }
-}

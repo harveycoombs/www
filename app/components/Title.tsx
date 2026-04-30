@@ -1,6 +1,12 @@
 import { useInView } from "react-intersection-observer";
 
-export default function Title({ width = 1172, height = 95, ...rest }) {
+interface Properties {
+    width?: number;
+    height?: number;
+    [key: string]: any;
+}
+
+export default function Title({ width = 1172, height = 95, ...rest }: Properties) {
     const { ref, inView } = useInView({
         triggerOnce: true,
         threshold: 0.1
