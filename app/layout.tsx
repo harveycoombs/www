@@ -1,29 +1,28 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Barlow } from "next/font/google";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "./globals.css";
 
-import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 
-const poppins = Poppins({
+const barlow = Barlow({
     weight: ["300", "400", "500", "600", "700", "800"],
     subsets: ["latin"]
 });
 
-const description = "The official personal website of Harvey Coombs.";
+const description = "The official website of Harvey Coombs.";
 
 export const metadata: Metadata = {
-    title: "Harvey Coombs",
+    title: "Harvey Coombs – Entrepreneur & Engineer",
     description: description,
     icons: { icon: "/images/icon.png" },
     openGraph: {
-        title: "Harvey Coombs",
+        title: "Harvey Coombs – Entrepreneur & Engineer",
         description: description,
-        url: "https://coombstech.com",
+        url: "https://www.harveycoombs.com",
         images: [{
-            url: "https://coombstech.com/images/splash.webp",
+            url: "https://www.harveycoombs.com/images/splash.webp",
             width: 1200,
             height: 630,
             alt: "Harvey Coombs splash image"
@@ -40,14 +39,13 @@ export default async function RootLayout({
     return (
         <html lang="en">
             <head>
-                <meta name="theme-color" content="#869BB5" />
+                <meta name="theme-color" content="#000000" />
 
                 <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png" />
-                <link rel="canonical" href="https://harveycoombs.com" />
+                <link rel="canonical" href="https://www.harveycoombs.com" />
             </head>
 
-            <body className={`${poppins.className} min-h-screen select-none`}>
-                <Header />
+            <body className={`${barlow.className} bg-black text-white min-h-screen`}>
                 {children}
                 <Footer />
             </body>
