@@ -13,6 +13,7 @@
     "@fortawesome/free-regular-svg-icons": "^7.3.1",
     "@fortawesome/free-solid-svg-icons": "^7.3.1",
     "@fortawesome/react-fontawesome": "^3.5.0",
+    "@hcaptcha/react-hcaptcha": "^2.1.0",
     "motion": "^12.43.0",
     "next": "16.2.4",
     "react": "19.2.4",
