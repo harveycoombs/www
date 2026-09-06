@@ -1,11 +1,17 @@
+"use client";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBitcoin, faPaypal } from "@fortawesome/free-brands-svg-icons";
 
 import Panel from "@/app/components/common/Panel";
 import Label from "@/app/components/common/Label";
 import Field from "@/app/components/common/Field";
+import TextBox from "@/app/components/common/TextBox";
+import Button from "@/app/components/common/Button";
 
 export default function DonationPage() {
+     const [donationMethod, setDonationMethod] = useState<"fiat" | "crypto">("fiat");
+     
      return (
           <main className="push flex flex-col items-center justify-center gap-12 w-188 mx-auto max-md:px-6 max-md:w-full">
                <section className="w-full text-center">
@@ -15,13 +21,51 @@ export default function DonationPage() {
 
                <section className="w-full">
                     <div className="flex gap-4 mb-4">
-                         <PaymentOption icon={faPaypal} title="Credit/Debit Card" description="Via PayPal" activeBorderColor="border-blue-400/25" activeTextColor="text-blue-400/50" activeTitleColor="text-blue-400" activeBackgroundColor="bg-blue-400/8" selected />
-                         <PaymentOption icon={faBitcoin} title="Cryptocurrency" description="BTC, ETH &amp; SOL accepted" activeBorderColor="border-amber-400/25" activeTextColor="text-amber-400/50" activeTitleColor="text-amber-400" activeBackgroundColor="bg-amber-400/8" selected />
+                         <PaymentOption
+                              icon={faPaypal}
+                              title="Credit/Debit Card"
+                              description="Via PayPal"
+                              activeBorderColor="border-blue-400/25"
+                              activeTextColor="text-blue-400/50"
+                              activeTitleColor="text-blue-400"
+                              activeBackgroundColor="bg-blue-400/8"
+                              selected={donationMethod === "fiat"}
+                              onClick={() => setDonationMethod("fiat")}
+                         />
+                         
+                         <PaymentOption
+                              icon={faBitcoin}
+                              title="Cryptocurrency"
+                              description="BTC, ETH &amp; SOL accepted"
+                              activeBorderColor="border-amber-400/25"
+                              activeTextColor="text-amber-400/50"
+                              activeTitleColor="text-amber-400"
+                              activeBackgroundColor="bg-amber-400/8"
+                              selected={donationMethod === "crypto"}
+                              onClick={() => setDonationMethod("crypto")}
+                         />
                     </div>
                     
                     <Panel classes="w-full">
-                         <Label classes="block mb-1.5">Amount</Label>
-                         <Field classes="block w-full" type="number" />
+                         <div className="flex gap-3">
+                              <div className="w-1/2">
+                                   <Label classes="block mb-1.5">Name</Label>
+                                   <Field classes="block w-full" />
+                              </div>
+                              
+                              <div className="w-1/2">
+                                   <Label classes="block mb-1.5">Amount</Label>
+                                   <div className="flex items-center gap-2.5 text-white">
+                                        <Field classes="block w-full" type="number" min="5" max="2147483647" />
+                                        <div>USD</div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <Label classes="block mb-1.5 mt-2.5">Message</Label>
+                         <TextBox classes="block w-full" rows={6} />
+
+                         <Button classes="block w-full mt-2.5">Donate</Button>
                     </Panel>
                </section>
           </main>

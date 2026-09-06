@@ -78,7 +78,7 @@ export default function ContactPage() {
                                    </div>
                               </div>
      
-                              <Label classes="block mb-1.5 my-2.5">Message</Label>
+                              <Label classes="block mb-1.5 mt-2.5">Message</Label>
                               <TextBox rows={6} classes="block resize-vertical w-full min-h-32" onInput={(e: any) => setMessage(e.target.value)} />
      
                               <div className="flex gap-3 my-3 max-sm:flex-col max-sm:items-center">
