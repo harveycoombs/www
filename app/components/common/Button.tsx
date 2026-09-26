@@ -23,6 +23,6 @@ export default function Button({ children, url = "", type = "primary", classes =
                break;
      }
 
-     const classList = `font-semibold text-sm px-4.75 pt-2.5 pb-2.75 rounded-md cursor-pointer select-none duration-150 uppercase ${colors} active:scale-97 ${classes}`;
+     const classList = `font-semibold text-sm px-4.75 pt-2.5 pb-2.75 rounded-md cursor-pointer select-none duration-150 uppercase text-center ${colors} active:scale-97 ${classes}`;
      return url.length > 0 ? <Link href={url} className={classList} {...rest}>{children}</Link> : <button className={classList} {...rest}>{children}</button>;
 }

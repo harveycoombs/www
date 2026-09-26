@@ -11,8 +11,8 @@ export default function Header() {
 
                <nav className="flex gap-6 items-center">
                     <HeaderLink url="/">Home</HeaderLink>
-                    <HeaderLink url="/work">Work</HeaderLink>
-                    <HeaderLink url="/news">Updates</HeaderLink>
+                    <HeaderLink url="/portfolio">Portfolio</HeaderLink>
+                    <HeaderLink url="/services">Services</HeaderLink>
                     <HeaderLink url="/contact">Contact</HeaderLink>
 
                     <Button url="/donate">Donate</Button>

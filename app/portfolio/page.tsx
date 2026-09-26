@@ -9,7 +9,7 @@ export default function WorkPage() {
      return (
           <main className="push flex flex-col items-center justify-center gap-12 w-188 mx-auto max-md:px-6 max-md:w-full">
                <section className="w-full text-center">
-                    <h1 className="block text-4xl font-extrabold tracking-wide uppercase text-white">My Work</h1>
+                    <h1 className="block text-4xl font-extrabold tracking-wide uppercase text-white">My Portfolio</h1>
                     <p className="block font-medium mt-2 text-zinc-500">A list of my past &amp; present projects</p>
                </section>
 
@@ -17,10 +17,10 @@ export default function WorkPage() {
                     <h2 className="block mb-3 text-2xl font-bold tracking-wide uppercase text-white">Active Projects</h2>
                          
                     <div className="grid grid-cols-3 gap-3 max-md:grid-cols-2 max-sm:grid-cols-1">
-                         <Project title="Valiance Digital" startYear={2025} endYear={new Date().getFullYear()} summary="A software development & IT agency." icon="/images/projects/valiancedigital.jpg" url="/" />
-                         <Project title="Coombs Technologies" startYear={2025} endYear={new Date().getFullYear()} summary="A healthcare technology company." icon="/images/projects/coombstech.jpg" url="/" />
-                         <Project title="Share.surf" startYear={2021} endYear={new Date().getFullYear()} summary="A simple & secure file sharing platform." icon="/images/projects/sharesurf.jpg" url="/" />
-                         <Project title="AgentiBot" startYear={2020} endYear={new Date().getFullYear()} summary="The world's first agentic AI Discord bot." icon="/images/projects/agentibot.jpg" url="/" />
+                         <Project title="Valiance Digital" startYear={2025} endYear={new Date().getFullYear()} summary="A server hosting company." icon="/images/projects/valiancedigital.jpg" url="https://valiancedigital.com/" />
+                         <Project title="Coombs Technologies" startYear={2025} endYear={new Date().getFullYear()} summary="A healthcare technology company." icon="/images/projects/coombstech.jpg" url="https://coombstech.com/" />
+                         <Project title="Share.surf" startYear={2021} endYear={new Date().getFullYear()} summary="A simple & secure file sharing platform." icon="/images/projects/sharesurf.jpg" url="https://share.surf/" />
+                         <Project title="AgentiBot" startYear={2020} endYear={new Date().getFullYear()} summary="The world's first agentic AI Discord bot." icon="/images/projects/agentibot.jpg" url="https://agenti.bot/" />
                     </div>
                </section>
 
@@ -59,7 +59,7 @@ function Project({ title, startYear, endYear, summary, icon = "", url = "" }: an
                     <p className="text-sm mt-2">{summary}</p>
                </div>
 
-               {url.length > 0 && <Button classes="w-full mt-3">Visit <FontAwesomeIcon icon={faUpRightFromSquare} className="text-sky-200" /></Button>}
+               {url.length > 0 && <Button url={url} target="_blank" classes="w-full mt-3">Visit <FontAwesomeIcon icon={faUpRightFromSquare} className="text-sky-200" /></Button>}
           </Panel>
      );
 }
