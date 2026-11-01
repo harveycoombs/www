@@ -1,33 +1,45 @@
 import type { Metadata } from "next";
-import { Barlow } from "next/font/google";
+import { Mona_Sans } from "next/font/google";
+import { cookies } from "next/headers";
+
+import packageJson from "@/package.json";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "./globals.css";
 
+import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
+import UserProvider from "@/app/context/UserContext";
+import { authenticate } from "@/lib/jwt";
 
-const barlow = Barlow({
-    weight: ["300", "400", "500", "600", "700", "800"],
+const monaSans = Mona_Sans({
+    weight: ["400", "500", "600", "700", "800", "900"],
     subsets: ["latin"]
 });
 
-const description = "The official website of Harvey Coombs.";
+const description = "The no-frills file sharing service.";
 
 export const metadata: Metadata = {
-    title: "Harvey Coombs – Entrepreneur & Engineer",
+    title: `Share · ${packageJson.version}`,
     description: description,
     icons: { icon: "/images/icon.png" },
     openGraph: {
-        title: "Harvey Coombs – Entrepreneur & Engineer",
+        title: "Share",
         description: description,
-        url: "https://www.harveycoombs.com",
+        url: "https://www.share.surf",
         images: [{
-            url: "https://www.harveycoombs.com/images/splash.webp",
+            url: "https://www.share.surf/images/splash.jpg?v=1",
             width: 1200,
             height: 630,
-            alt: "Harvey Coombs splash image"
+            alt: "Share splash image"
         }],
-        type: "website"
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Share",
+        description: description,
+        creator: "",
     }
 };
 
@@ -36,18 +48,25 @@ export default async function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
+    const cookieJar = await cookies();
+    const token = cookieJar.get("token")?.value;
+    const user = await authenticate(token ?? "");
+
     return (
         <html lang="en">
             <head>
-                <meta name="theme-color" content="#000000" />
+                <meta name="theme-color" content="#2B7FFF" />
 
                 <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png" />
-                <link rel="canonical" href="https://www.harveycoombs.com" />
+                <link rel="canonical" href="https://www.share.surf" />
             </head>
 
-            <body className={`${barlow.className} bg-black text-white min-h-screen`}>
-                {children}
-                <Footer />
+            <body className={`${monaSans.className} antialiased h-screen bg-white text-slate-800 overflow-x-hidden dark:bg-zinc-950 dark:text-white`}>
+                <UserProvider user={user}>
+                    <Header />
+                    {children}
+                    <Footer />
+                </UserProvider>
             </body>
         </html>
     );
