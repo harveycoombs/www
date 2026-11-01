@@ -46,13 +46,13 @@ export default async function RootLayout({
      return (
           <html lang="en">
                <head>
-                    <meta name="theme-color" content="#2B7FFF" />
+                    <meta name="theme-color" content="#0D0D0C" />
      
                     <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png" />
                     <link rel="canonical" href="https://www.harveycoombs.com" />
                </head>
      
-               <body className={`${chakraPetch.className} antialiased h-screen overflow-x-hidden`}>
+               <body className={`${chakraPetch.className} antialiased min-h-screen scroll-smooth overflow-x-hidden bg-stone-950 uppercase`}>
                     <Header />
                     {children}
                     <Footer />
