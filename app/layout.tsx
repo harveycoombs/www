@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
-import { Chakra_Petch } from "next/font/google";
+import { Inter } from "next/font/google";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "./globals.css";
 
-import Header from "@/app/components/Header";
-import Footer from "@/app/components/Footer";
-
-const chakraPetch = Chakra_Petch({
+const inter = Inter({
     weight: ["300", "400", "500", "600", "700"],
     subsets: ["latin"]
 });
@@ -52,10 +49,8 @@ export default async function RootLayout({
                     <link rel="canonical" href="https://www.harveycoombs.com" />
                </head>
      
-               <body className={`${chakraPetch.className} antialiased min-h-screen scroll-smooth overflow-x-hidden bg-stone-950 uppercase`}>
-                    <Header />
+               <body className={`${inter.className} antialiased min-h-screen scroll-smooth overflow-x-hidden`}>
                     {children}
-                    <Footer />
                </body>
           </html>
      );
