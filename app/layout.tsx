@@ -1,43 +1,38 @@
 import type { Metadata } from "next";
-import { Mona_Sans } from "next/font/google";
-import { cookies } from "next/headers";
-
-import packageJson from "@/package.json";
+import { Chakra_Petch } from "next/font/google";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "./globals.css";
 
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
-import UserProvider from "@/app/context/UserContext";
-import { authenticate } from "@/lib/jwt";
 
-const monaSans = Mona_Sans({
-    weight: ["400", "500", "600", "700", "800", "900"],
+const chakraPetch = Chakra_Petch({
+    weight: ["300", "400", "500", "600", "700"],
     subsets: ["latin"]
 });
 
-const description = "The no-frills file sharing service.";
+const description = "The official website of Harvey Coombs.";
 
 export const metadata: Metadata = {
-    title: `Share · ${packageJson.version}`,
+    title: "Harvey Coombs",
     description: description,
     icons: { icon: "/images/icon.png" },
     openGraph: {
-        title: "Share",
+        title: "Harvey Coombs",
         description: description,
-        url: "https://www.share.surf",
+        url: "https://www.harveycoombs.com",
         images: [{
-            url: "https://www.share.surf/images/splash.jpg?v=1",
+            url: "https://www.harveycoombs.com/images/splash.jpg",
             width: 1200,
             height: 630,
-            alt: "Share splash image"
+            alt: "Harvey Coombs splash image"
         }],
         type: "website",
     },
     twitter: {
         card: "summary_large_image",
-        title: "Share",
+        title: "Harvey Coombs",
         description: description,
         creator: "",
     }
@@ -48,26 +43,20 @@ export default async function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
-    const cookieJar = await cookies();
-    const token = cookieJar.get("token")?.value;
-    const user = await authenticate(token ?? "");
-
-    return (
-        <html lang="en">
-            <head>
-                <meta name="theme-color" content="#2B7FFF" />
-
-                <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png" />
-                <link rel="canonical" href="https://www.share.surf" />
-            </head>
-
-            <body className={`${monaSans.className} antialiased h-screen bg-white text-slate-800 overflow-x-hidden dark:bg-zinc-950 dark:text-white`}>
-                <UserProvider user={user}>
+     return (
+          <html lang="en">
+               <head>
+                    <meta name="theme-color" content="#2B7FFF" />
+     
+                    <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png" />
+                    <link rel="canonical" href="https://www.harveycoombs.com" />
+               </head>
+     
+               <body className={`${chakraPetch.className} antialiased h-screen overflow-x-hidden`}>
                     <Header />
                     {children}
                     <Footer />
-                </UserProvider>
-            </body>
-        </html>
-    );
+               </body>
+          </html>
+     );
 }
