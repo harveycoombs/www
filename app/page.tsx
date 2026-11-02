@@ -5,6 +5,7 @@ import { faArrowRight, faArrowUpRightFromSquare } from "@fortawesome/free-solid-
 
 import Button from "@/app/components/common/Button";
 import DownButton from "@/app/components/home/DownButton";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons/faExternalLinkAlt";
 
 const routes = [
      { title: "About me", description: "How I think and work.", url: "/about" },
@@ -60,7 +61,7 @@ export default function Home() {
                <section id="overview" className="border-b border-white/10 bg-stone-950">
                     <div className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
                          <div className="max-w-3xl">
-                              <h2 className="text-4xl font-medium leading-tight tracking-tighter text-white sm:text-6xl">I make digital products clear and useful.</h2>
+                              <h2 className="text-4xl font-medium leading-tight tracking-tighter text-white sm:text-6xl">I make digital products clear and useful</h2>
                               <p className="mt-7 max-w-2xl text-base leading-8 text-stone-400 sm:text-lg">
                                    I work from the first idea through the final release. I decide what matters, shape the experience, and write the code.
                               </p>
@@ -77,6 +78,19 @@ export default function Home() {
                                    </Link>
                               ))}
                          </div>
+                    </div>
+               </section>
+
+               <section id="sharedotsurf" className="bg-stone-950">
+                    <div className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-16 lg:py-28 flex justify-between">
+                         <div className="max-w-3xl">
+                              <h2 className="text-4xl font-medium leading-tight tracking-tighter text-white sm:text-6xl">Share.surf &mdash; File Sharing</h2>
+                              <p className="mt-7 max-w-2xl text-base leading-8 text-stone-400 sm:text-lg">Share.surf is a lightweight, easy-to-use file sharing platform.</p>
+
+                              <Button classes="mt-4">Visit Share.surf<FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ml-2" aria-hidden="true" /></Button>
+                         </div>
+
+                         <Image src="/images/share-surf.webp" alt="Share.surf" width={1920} height={1080} className="w-2/5 block shrink object-cover outline outline-white/10 border-12 border-stone-950" />
                     </div>
                </section>
           </main>
