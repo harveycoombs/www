@@ -9,7 +9,7 @@ export default function About() {
                <section className="border-b border-white/10 px-6 pb-24 pt-40 sm:px-10 lg:px-16 lg:pb-32">
                     <div className="mx-auto max-w-7xl">
                          <div className="max-w-5xl">
-                              <h1 className="text-5xl font-medium leading-none tracking-tighter text-white sm:text-8xl">I make digital products clear and useful.</h1>
+                              <h1 className="text-5xl font-medium leading-none tracking-tighter text-white sm:text-8xl">About Me</h1>
                               <p className="mt-10 max-w-2xl text-lg leading-8 text-stone-400">I work from the first idea through the final release. I decide what matters, shape the experience, and write the code.</p>
                          </div>
                     </div>

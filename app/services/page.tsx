@@ -31,7 +31,7 @@ export default function Services() {
           <main className="bg-stone-950 text-stone-100 tracking-wide">
                <section className="border-b border-white/10 px-6 pb-24 pt-40 sm:px-10 lg:px-16 lg:pb-32">
                     <div className="mx-auto max-w-7xl">
-                         <h1 className="max-w-5xl text-5xl font-medium leading-none tracking-tighter text-white sm:text-8xl">I keep things clear.</h1>
+                         <h1 className="max-w-5xl text-5xl font-medium leading-none tracking-tighter text-white sm:text-8xl">Services I Offer</h1>
                          <p className="mt-10 max-w-2xl text-lg leading-8 text-stone-400">Need a new product, a better website, or a technical problem solved? I bring a calm, direct approach and get to the point.</p>
                     </div>
                </section>

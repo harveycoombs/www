@@ -8,7 +8,6 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import Button from "@/app/components/common/Button";
 
 export default function Header() {
-
      const [isMenuOpen, setIsMenuOpen] = useState(false);
 
      return (
@@ -19,7 +18,6 @@ export default function Header() {
                     <HeaderLink url="/about">About Me</HeaderLink>
                     <HeaderLink url="/projects">My Work</HeaderLink>
                     <HeaderLink url="/services">My Services</HeaderLink>
-                    <HeaderLink url="/more">More</HeaderLink>
 
                     <button
                          className="size-11 border border-white/20 text-amber-300 transition-colors duration-200 hover:border-amber-300 hover:bg-amber-300/10 lg:hidden"
@@ -39,7 +37,6 @@ export default function Header() {
                               <MobileLink url="/about" onClick={() => setIsMenuOpen(false)}>About Me</MobileLink>
                               <MobileLink url="/projects" onClick={() => setIsMenuOpen(false)}>My Work</MobileLink>
                               <MobileLink url="/services" onClick={() => setIsMenuOpen(false)}>My Services</MobileLink>
-                              <MobileLink url="/more" onClick={() => setIsMenuOpen(false)}>More</MobileLink>
                               <MobileLink url="/contact" onClick={() => setIsMenuOpen(false)}>Contact Me</MobileLink>
                          </div>
                     </div>

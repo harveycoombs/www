@@ -29,7 +29,7 @@ export default function Projects() {
                <section className="border-b border-white/10 px-6 pb-24 pt-40 sm:px-10 lg:px-16 lg:pb-32">
                     <div className="mx-auto max-w-7xl">
                          <div className="flex flex-col justify-between gap-10 lg:flex-row lg:items-end">
-                              <h1 className="max-w-4xl text-5xl font-medium leading-none tracking-tighter text-white sm:text-8xl">I take ideas from concept to launch.</h1>
+                              <h1 className="max-w-4xl text-5xl font-medium leading-none tracking-tighter text-white sm:text-8xl">My Work</h1>
                               <p className="max-w-xs text-sm leading-7 text-stone-500">Strategy, design, and code for work that needs to move.</p>
                          </div>
                     </div>
