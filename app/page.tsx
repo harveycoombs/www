@@ -77,7 +77,7 @@ export default function Home() {
                               <h2 className="text-4xl font-medium leading-tight tracking-tighter text-white sm:text-6xl">Share.surf &mdash; File Sharing</h2>
                               <p className="mt-7 max-w-2xl text-base leading-8 text-stone-400 sm:text-lg">Share.surf is a lightweight, easy-to-use file sharing platform.</p>
 
-                              <Button classes="mt-4">Visit Share.surf<FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ml-2" aria-hidden="true" /></Button>
+                              <Button classes="mt-4" url="https://share.surf/">Visit Share.surf<FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ml-2" aria-hidden="true" /></Button>
                          </div>
 
                          <Image src="/images/share-surf.webp" alt="Share.surf" width={1920} height={1080} className="w-2/5 block shrink object-cover outline outline-white/10 border-12 border-stone-950" />
