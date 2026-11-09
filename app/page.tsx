@@ -12,12 +12,12 @@ export default function Home() {
                <section id="top" className="relative grid min-h-screen place-items-center overflow-hidden border-b border-white/10">
                     <div className="absolute inset-0 z-0">
                          <Image
-                              src="/images/me.jpg"
+                              src="/images/headshot-0.webp"
                               alt="Harvey Coombs"
                               width={2560}
                               height={1440}
                               priority
-                              className="h-full w-full object-cover object-center grayscale-20 contrast-110 sm:object-center"
+                              className="h-full w-full object-cover object-center grayscale-20 contrast-110 "
                          />
 
                          <div className="absolute inset-0 bg-radial from-amber-300/10 to-transparent" />

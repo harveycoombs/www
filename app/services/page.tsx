@@ -1,29 +1,38 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faCode, faCompass, faLightbulb } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faCloud, faCode, faInfinity, faMobileScreen, faNetworkWired, faRobot } from "@fortawesome/free-solid-svg-icons";
 
 const services = [
      {
-          icon: faLightbulb,
-          title: "Product direction",
-          description: "I help you decide what to make, who it is for, and what matters most."
-     },
-     {
           icon: faCode,
-          title: "Web development",
-          description: "I design and develop fast, responsive websites and applications."
+          title: "Websites & web apps",
+          description: "I design and build websites and web applications with JavaScript, TypeScript, React and Next.js, or C# and ASP.NET, using PostgreSQL, MySQL or MSSQL databases."
      },
      {
-          icon: faCompass,
-          title: "Technical decisions",
-          description: "I remove uncertainty from the technical choices that shape the work."
+          icon: faMobileScreen,
+          title: "Mobile apps",
+          description: "I build iOS and Android apps with React Native and Expo."
+     },
+     {
+          icon: faRobot,
+          title: "AI & automation",
+          description: "I help you automate repetitive tasks using AI, building tools with Python and LangChain."
+     },
+     {
+          icon: faNetworkWired,
+          title: "Network engineering",
+          description: "I design, set up, and troubleshoot networks."
+     },
+     {
+          icon: faCloud,
+          title: "AWS & cloud",
+          description: "I build and manage infrastructure on AWS."
+     },
+     {
+          icon: faInfinity,
+          title: "DevOps & delivery",
+          description: "I set up CI/CD pipelines, monitoring, and infrastructure as code."
      }
-];
-
-const principles = [
-     "Find the actual problem",
-     "Make the important parts obvious",
-     "Leave room to grow"
 ];
 
 export default function Services() {
@@ -46,22 +55,6 @@ export default function Services() {
                                         <p className="mt-4 text-sm leading-7 text-stone-400">{service.description}</p>
                                    </article>
                               ))}
-                         </div>
-                    </div>
-               </section>
-
-               <section className="px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
-                    <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-5 lg:gap-24">
-                         <h2 className="max-w-sm text-4xl font-medium leading-tight tracking-tighter text-white sm:text-5xl lg:col-span-2">I do not add noise.</h2>
-                         <div className="lg:col-span-3">
-                              <div className="divide-y divide-white/10 border-y border-white/10">
-                                   {principles.map((principle, index) => (
-                                        <div key={principle} className="flex items-center justify-between gap-6 py-6">
-                                             <p className="text-xl tracking-tight text-stone-200 sm:text-2xl">{principle}</p>
-                                             <span className="text-sm text-amber-300">0{index + 1}</span>
-                                        </div>
-                                   ))}
-                              </div>
                          </div>
                     </div>
                </section>

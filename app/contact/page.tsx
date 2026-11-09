@@ -14,7 +14,7 @@ export default function Contact() {
                               <div className="max-w-sm">
                                    <FontAwesomeIcon icon={faEnvelope} className="text-3xl text-amber-300" aria-hidden="true" />
                                    <p className="mt-8 text-base leading-8 text-stone-400">Tell me what you are working on, where you are stuck, or what you want to make better.</p>
-                                   <a href="mailto:hello@harveycoombs.com" className="mt-8 block w-fit border-b border-amber-300 pb-3 text-lg font-semibold text-amber-300 transition-colors hover:text-amber-200">hello@harveycoombs.com</a>
+                                   <a href="mailto:contact@harveycoombs.com" className="mt-8 block w-fit border-b border-amber-300 pb-3 text-lg font-semibold text-amber-300 transition-colors hover:text-amber-200">contact@harveycoombs.com</a>
                               </div>
                          </div>
                          <div className="lg:col-span-3"><ContactForm /></div>

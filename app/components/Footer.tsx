@@ -11,8 +11,7 @@ export default function Footer() {
 
                     <div className="flex items-center gap-3">
                          <nav className="flex items-center gap-2" aria-label="Social media">
-                              <SocialMediaButton icon={faRedditAlien} url="https://www.reddit.com/user/harveycoombs" label="Reddit" />
-                              <SocialMediaButton icon={faXTwitter} url="https://x.com/harveycoombs" label="X" />
+                              <SocialMediaButton icon={faXTwitter} url="https://x.com/theharveycoombs" label="X" />
                               <SocialMediaButton icon={faLinkedinIn} url="https://www.linkedin.com/in/harveycoombs" label="LinkedIn" />
                               <SocialMediaButton icon={faGithub} url="https://github.com/harveycoombs" label="GitHub" />
                          </nav>

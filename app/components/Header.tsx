@@ -15,7 +15,6 @@ export default function Header() {
                <Link href="/" className="relative text-2xl sm:text-3xl font-semibold tracking-tighter leading-none transition-colors duration-200 before:mr-1 before:mb-0.5 before:inline-block before:size-2.5 before:bg-amber-400 before:shadow-lg hover:text-amber-300">Harvey Coombs</Link>
                
                <nav className="flex items-center gap-3 text-white/80 lg:gap-7">
-                    <HeaderLink url="/about">About Me</HeaderLink>
                     <HeaderLink url="/projects">My Work</HeaderLink>
                     <HeaderLink url="/services">My Services</HeaderLink>
 
@@ -34,7 +33,6 @@ export default function Header() {
                {isMenuOpen && (
                     <div className="absolute left-5 right-5 top-full border border-white/15 bg-stone-950/95 p-4 shadow-2xl backdrop-blur-md lg:hidden">
                          <div className="flex flex-col divide-y divide-white/10">
-                              <MobileLink url="/about" onClick={() => setIsMenuOpen(false)}>About Me</MobileLink>
                               <MobileLink url="/projects" onClick={() => setIsMenuOpen(false)}>My Work</MobileLink>
                               <MobileLink url="/services" onClick={() => setIsMenuOpen(false)}>My Services</MobileLink>
                               <MobileLink url="/contact" onClick={() => setIsMenuOpen(false)}>Contact Me</MobileLink>
