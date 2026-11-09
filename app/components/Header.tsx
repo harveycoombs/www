@@ -12,7 +12,7 @@ export default function Header() {
 
      return (
           <header className={`-mb-20 p-5 w-full flex items-center justify-between text-white bg-stone-950/50 border-b border-white/15 shadow-xl backdrop-blur-md sticky z-40 top-0 left-0 right-0`}>
-               <Link href="/" className="relative text-2xl sm:text-3xl font-semibold tracking-tighter leading-none transition-colors duration-200 before:mr-1 before:mb-0.5 before:inline-block before:size-2.5 before:bg-amber-400 before:shadow-lg hover:text-amber-300">Harvey Coombs</Link>
+               <Link href="/" className="relative text-2xl sm:text-3xl font-semibold tracking-tighter leading-none transition-colors duration-200 hover:text-amber-300">Harvey Coombs</Link>
                
                <nav className="flex items-center gap-3 text-white/80 lg:gap-7">
                     <HeaderLink url="/projects">My Work</HeaderLink>
